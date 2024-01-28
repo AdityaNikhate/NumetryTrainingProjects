@@ -120,3 +120,29 @@ button:hover{
   background-color: transparent;
   border: 2px solid #fff;
 }
+
+/* For Mobile view the from will be */
+
+
+@media (max-width : 600px){
+  .maincontainer{
+    height: 100vh;
+    width: 100vw;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  #but{
+    display: flex;
+    justify-content: center;
+  }
+  .name{
+    flex-direction: column;
+  }
+
+  .name> div{
+    width: 100%;
+  }
+
+}
