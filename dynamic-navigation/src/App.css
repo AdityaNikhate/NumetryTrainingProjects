@@ -1,0 +1,200 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  font-family: cursive;
+  color: bisque;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 3vw;
+  background-color: #fff;
+}
+nav h1{
+  color: rgb(240, 152, 45);
+  font-weight: 900;
+  font-size: 2vw;
+}
+
+nav ul{
+  display: flex;
+  gap: 3vw;
+  list-style-type: none;
+  align-items: center;
+
+}
+
+.mobnav{
+  display: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgb(153, 64, 237);
+  font-weight: 700;
+}
+
+h3{
+  display: none;
+}
+
+/* footer */
+.footer1{
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(14, 14, 14);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 40px 50px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  position:absolute;
+  bottom: 0;
+  /* display: none; */
+  
+}
+.footer1 img{
+  width: 220px;
+  margin-bottom: 38px;
+}
+
+.footer1 ul{
+  list-style-type: none;
+
+}
+
+.footer1 h4{
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer1 li{
+  margin-bottom: 10px;
+}
+
+.foot1{
+  text-align: center;
+}
+
+.foot1 h1{
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.foot1 h6{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.logocontact{
+  color: rgb(243, 109, 33);
+  margin-top: 50px;
+}
+.logocontact i{
+  font-size: 27px;
+  margin-right: 15px;
+}
+/* footer */
+
+/* Hole */
+/* .hole{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+/* Hole */
+
+.divmobile{
+  display: flex;
+  display: none;
+}
+
+
+
+/* For Mobile View */
+@media (max-width : 600px){
+  nav{
+    padding: 2vh 3vw;
+    z-index: 9;
+  }
+  nav h1{
+    font-size: 6vw;
+  }
+  nav ul{
+    display: none;
+  }
+
+  h3{
+    display: inline;
+    position: relative;
+    top: 0.5vh;
+    right: 0.7vw;
+    color: rgb(218, 55, 218);
+    font-weight: 900;
+    font-size: 3vh;
+  }
+
+  .mobnav{
+    background-color: rgba(230, 92, 230, 0.716);
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 1px 5px 5px 1000px;
+    padding: 4vh 15vw;
+    transition-duration: 0.7s;
+    padding-left: 40vw;
+    display: block;
+  }
+  .mobnav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    gap: 3vh;
+  }
+  .mobnav a{
+    color: rgb(39, 243, 137);
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 2.2vh;
+  }
+  .mobhid{
+    top: 9vh;
+    right: 0;
+  }
+  .footer1{
+    display: none;
+  }
+
+  .divmobile{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+    /* padding: 1vh 2vw; */
+    padding-bottom: 4vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  .logocontact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+  }
+}
+
+
