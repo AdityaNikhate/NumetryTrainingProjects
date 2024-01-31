@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+}
+/* Navigation Bar */
+.mainnav{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  box-shadow: 0px 2px 41px -12px #646464;
+
+}
+
+
+.img{
+  width: 12vw;
+}
+.img img{
+  width: 100%;
+  height: 100%;
+}
+
+.search{
+  background-color: rgb(240,245,255);
+  padding: 0 13px;
+  color: rgb(142, 143, 145);
+  border-radius: 8px;
+}
+
+#search-inp{
+  width: 34vw;
+  height: 5vh;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+  background-color: transparent;
+}
+
+.rightnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+}
+
+.subrightnav button{
+
+  outline: none;
+  border: none;
+  font-family: cursive;
+  font-size: 1.1vw;
+  padding: 0.5vh 1vw;
+  background-color: transparent;
+}
+#loginbut:hover{
+  color: #fff;
+}
+
+.subrightnav{
+  padding: 0.3vh 0.6vw;
+  border-radius: 5px;
+}
+
+.subrightnav:nth-child(1):hover{
+  background-color: rgb(41,83,223);
+  color: #fff;
+}
+/* Navigation Bar */
+
+/* container containing card */
+.container1{
+  background-color: rgba(237, 246, 255, 0.661);
+  /* box-sizing: border-box; */
+  padding: 7vh 5vw;
+  /* margin-top: 7vh; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: space-evenly;
+  row-gap: 3vh;
+  /* column-gap: 5vw; */
+  column-gap: min(5vw);
+}
+.card{
+  width: 18rem;
+}
+/* container containing card */
+
+
+
+/* media query */
+@media(max-width: 600px){
+  .img{
+    width: 24vw;
+  }
+  .search{
+    display: none;
+  }
+  .container1 {
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); /* Adjust the minmax values for smaller screens */
+    column-gap: 0;
+  }
+  .card{
+    width: 10rem;
+  }
+  .subrightnav button{
+    display: none;
+  }
+  .rightnav{
+    margin-right: 7vw;
+  }
+  .subrightnav{
+    margin-right: 1vw;
+    color: rgb(250, 57, 154);
+    font-size: 4.5vw;
+  }
+}
+/* media query */
